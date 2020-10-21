@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_static_copies",
+  "info": {
+    "name": "copy",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "key": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "en": {
+      "type": "string"
+    },
+    "fr": {
+      "type": "string"
+    }
+  }
+}

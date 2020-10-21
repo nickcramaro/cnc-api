@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_static_images",
+  "info": {
+    "name": "image",
+    "icon": "camera"
+  },
+  "options": {},
+  "attributes": {
+    "key": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

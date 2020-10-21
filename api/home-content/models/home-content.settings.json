@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_contents",
+  "info": {
+    "name": "Home Content",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "copy": {
+      "type": "component",
+      "repeatable": true,
+      "component": "static.copy"
+    },
+    "images": {
+      "type": "component",
+      "repeatable": true,
+      "component": "static.image"
+    }
+  }
+}
