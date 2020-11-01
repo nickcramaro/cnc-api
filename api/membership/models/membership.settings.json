@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "memberships",
+  "info": {
+    "name": "membership",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "membership"
+    },
+    "number": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "stripe_token": {
+      "type": "string"
+    }
+  }
+}
