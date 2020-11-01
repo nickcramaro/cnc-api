@@ -21,8 +21,11 @@
       "unique": true,
       "required": true
     },
-    "stripe_token": {
+    "charge_id": {
       "type": "string"
+    },
+    "amount": {
+      "type": "decimal"
     }
   }
 }
